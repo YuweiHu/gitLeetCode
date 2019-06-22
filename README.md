@@ -1,2 +1,3 @@
 # gitLeetCode
-My LeetCode Solution.
+My LeetCode solution in JavaScript!
+
