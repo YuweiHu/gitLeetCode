@@ -11,3 +11,15 @@ var repeatedNTimes = function(A) {
     });
     return result;
 };
+// 116ms >10.25%
+var repeatedNTimes = function(A) {
+    A.sort((a, b) => { return a - b });
+    var result = 0;
+    for (i = 0; i < A.length; i++) {
+        if (A[i] == A[i + 1]) {
+            result = A[i];
+            break;
+        }
+    }
+    return result;
+};
