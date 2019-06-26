@@ -23,3 +23,12 @@ var repeatedNTimes = function(A) {
     }
     return result;
 };
+// 56ms >96.80%
+var repeatedNTimes = function(A) {
+    //跑一半多一個迴圈即可,因有N+1個重複
+    for (i = 0; i < A.length / 2 + 1; i++) {
+        if (A.indexOf(A[i]) != A.lastIndexOf(A[i])) {
+            return A[i];
+        }
+    }
+};
